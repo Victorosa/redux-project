@@ -1,0 +1,61 @@
+.navbar{
+    display:  map-get($display, "display1");
+    position: map-get($position, "position2");
+    gap: 5em;
+    height:map-get($font-width, "font-width2");
+    border-bottom: 1px solid $color;
+}
+.lfr{
+    display:  map-get($display, "display1");
+}
+.hac{
+    display:  map-get($display, "display1");
+    gap:  map-get($font-size, "size4");
+    margin-top: -1em;
+    font-size:  map-get($font-size, "size5");
+}
+.snav{
+    display:  map-get($display, "display1");
+    gap: 8em;
+}
+.nam{
+    display:  map-get($display, "display1");
+    margin-left: 9em;
+    height:   map-get($font-size, "size6");
+    position: map-get($position, "position2");
+    justify-content: center;
+    margin-top: -0.4em;
+    font-size:  map-get($font-size, "size5");
+    .human{
+        position: map-get($position, "position1");
+       right: 7vw;
+    }
+}
+.search{
+    input{
+        width: 25em;
+        height:  map-get($font-size, "size3");;
+        color: $victor;
+        justify-self:  center;
+        text-align: center;
+        border-radius: 15px;
+        outline: map-get($display, "display7");
+        border:  map-get($display, "display7");
+        box-shadow: 0 0 5px $color;
+    }
+    ::placeholder{
+        margin-left:  map-get($font-size, "size01");;
+        text-align:  center;
+        color:$victor;
+    }
+}
+.head {
+    margin-top: -1em;
+    height:   map-get($font-size, "size4");
+    p{
+        color: $victor;
+        font-size:   map-get($font-size, "size5");
+        font-weight: 900;
+    }
+}
+

@@ -1,0 +1,20 @@
+.leftbar{
+    height: 80vh;
+    width: 20vw;
+    font-size : map-get($font-size, "size5");
+    p{
+        padding: 12px 2px;
+        margin: 0 0 0 5px;
+    }
+    p:hover{
+        background-color:rgba($color: $pcolor, $alpha: 0.1);
+    }
+    .icon{
+        color:$seccolor ;
+        font-weight: 900;
+        font-size:   map-get($font-size, "size5");;
+    }
+}
+.ico{
+    display:  map-get($display, "display7");
+}

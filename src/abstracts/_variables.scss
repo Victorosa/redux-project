@@ -1,0 +1,70 @@
+$myfont:helvetica, sans-serif;
+
+// colors
+$promise:#fe9900;
+$pcolor:black;
+$color:#333;
+$seccolor:#835461;
+$victor:#5cb85c;
+$victor:#337ab7;
+$pricolor:white;
+$yellow:red;
+
+// FONT-SIZES
+$font-size:(
+    "size01":4em,
+    "size1":3em,
+    "size2":2.5em,
+    "size3":2em,
+    "size4":1.5em,
+    "size5":1.2em,
+    "size6":1em,
+    "size8":0.8em,
+    "size7":0.5em,
+    "size9":0.3em,
+);
+//  FONT-WEIGHTS
+$font-weight:(
+    "weight1":900,
+    "weight2":700,
+    "weight3":600,
+    "weight4":500,
+    "weight5":400
+);
+
+// WIDTH/HEIGHT
+$font-width:(
+    "width1":fit-content,
+    "width2":max-content,
+    "width3":min-content,
+    "width4":auto,
+    "width5":100vw,
+    "width6":100%,
+);
+
+// DISPLAY
+$display:(
+    "display1":flex,
+    "display2":grid,
+    "display3":column,
+    "display4":block,
+    "display5":flexbox,
+    "display6":inline,
+    "display7":none,
+);
+
+// POSITION
+$position:(
+    "position1":absolute,
+    "position2":relative,
+    "position3":sticky,
+    "position4":fixed
+);
+ 
+// ALIGN
+
+$align:(
+    "align 1":left,
+    "align 2":center,
+    "align 3":right
+);

@@ -1,0 +1,49 @@
+.rightbar{
+    margin:  map-get($font-size, "size3");;
+    z-index: -1;
+    .right{
+        height: 22vh;
+        flex-wrap: wrap;
+        display:  map-get($display, "display1");
+        width: 30vw;
+        position: map-get($position, "position2");
+        box-shadow: 0 0 5px $victor;
+        background-image: linear-gradient(45deg, $victor,$seccolor, pink, brown );
+        background-size: 200%;
+        text-align:  map-get($align, "align2");
+        animation: same 10s infinite alternate;
+    }
+    p{
+        margin:   map-get($font-size, "size7") 0;
+        font-size:  map-get($font-size, "size5");
+
+    }
+}
+.p{
+    position: map-get($position, "position2");
+    top: 50%;
+    font-size:   map-get($font-size, "size3") !important;
+    font-weight: 900;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: auto;
+    width: 40vw;
+    font-size: 2rem;
+    background-size: 400%;
+    background-clip: text;
+    text-align: center;
+    background-image: linear-gradient( 45deg, $victor,$promise, $victor,$pcolor,$victor );
+    background-clip: text;
+    -webkit-background-clip: text; 
+    color: transparent;
+    animation: same 20s infinite alternate;
+ }
+
+ @keyframes same {
+    from{
+        background-position:  left;
+    }
+    to{
+        background-position: right;
+    }
+ }
