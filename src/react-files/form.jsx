@@ -1,16 +1,10 @@
-// https://reactnativeelements.com/docs/components/image
-
-
-
-
 import React, { useState} from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { update, remove } from '../redux/userslice';
-// import images from './images.jpg';
 
 
 export default function Form() {
-    const [delecting, setDelecting] = useState(false); 
+    const [deleting, setDeleting] = useState(false); 
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [login, setLogin] = useState(true);
@@ -18,7 +12,7 @@ export default function Form() {
     const [account, setAccount] = useState(true);
     const handleDelete = ()=>{
       if(login){
-        setDelecting(true)
+        setDeleting(true)
       }
       else{
         setAccount(false)
@@ -41,7 +35,7 @@ export default function Form() {
      
     };
     const handleConfirm = () => {
-      setDelecting(false) 
+      setDeleting(false) 
       setLogin(false)
       dispatch(remove(""))
     };
@@ -50,14 +44,14 @@ export default function Form() {
     <div>
       <section className="form">
          <p className="account">Update Your Account</p> 
-         {delecting? <div className="alert"><p>Deleting account 
+         {deleting? <div className="alert"><p>Deleting account 
            cannot be undone <span className="name">{user.name}</span>! <br/>
-         You should confirm your password to delect your account.
-    If password confirm click confirm button to delect account</p>
+         You should confirm your password to delete your account.
+    If password confirm click confirm button to delete account</p>
     <button className="confirm" onClick={handleConfirm}>confirm</button>
     </div>: ""}
     {!account&& <div className='red'>You don't have an account</div>}
-         <button className="daccount"  onClick={handleDelete}>Delete acount</button>
+         <button className="daccount"  onClick={handleDelete}>Delete account</button>
          <div className="profile">
              <p>Profile Picture</p>
              <div className="change">
@@ -74,7 +68,7 @@ export default function Form() {
                onChange={(e) => setEmail(e.target.value)} />
             <p className="input" >password</p>
                <input type="password" value={password} placeholder={user.password}  onChange={(e) => setPassword(e.target.value)}/><br />
-               {!login&& <div className='reds'>Fill in all your credentials</div>}
+               {password && !login ? <div className='reds'>Fill in all your credentials</div>: null}
             <button className="login" onClick={handleUpdate}>update</button>
              </form>
              </div>

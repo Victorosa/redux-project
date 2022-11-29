@@ -6,8 +6,8 @@ function Rightbar() {
   return (
     <div>
       <section className="rightbar">
-          <p>Reccomended for {name}</p>
-          <div className="right"> <p className='p'>Reccomended for {name}</p></div>
+          <p>Recommended for {name}</p>
+          <div className="right"> <p className='p'>Recommended for {name}</p></div>
           <p>Popular on Victor App</p>
           <div className="right"> <p className='p'>Popular on Victor App</p></div>
           <p>Editor's Choice</p>

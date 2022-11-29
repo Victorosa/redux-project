@@ -36,7 +36,6 @@ function Hleftbar() {
 
 function Leftbar() {
   const [nav, setNav] = useState(false);
-  const name = useSelector(state=>state.user.name)
   return (
     <div className='y'>
       <div className="z">
